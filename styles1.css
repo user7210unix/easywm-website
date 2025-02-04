@@ -1,0 +1,188 @@
+/* Reset styles */
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+@font-face {
+    font-family: 'Altroned';
+    src: url('assets/fonts/AUTOMATA.ttf') format('truetype');
+}
+
+body {
+    font-family: 'Altroned', sans-serif;
+    background: url('assets/images/background.png') no-repeat center center fixed;
+    background-size: cover;
+    color: #f4f4f4;
+    line-height: 1.2;
+    min-height: 100vh;
+    display: flex;
+    justify-content: center;
+    align-items: flex-start;
+    padding: 20px;
+}
+
+.container {
+    max-width: 1200px;
+    width: 100%;
+    padding: 40px;
+    background-color: rgba(0, 0, 0, 0.6);
+    border-radius: 17px;
+    text-align: left;
+    box-shadow: 0 4px 10px rgba(0, 0, 0, 0.3);
+}
+
+header {
+    text-align: center;
+    margin-bottom: 40px;
+}
+
+.banner {
+    display: block;
+    max-width: 600px;
+    margin: 0 auto 20px;
+}
+
+.optimized-text {
+    text-align: center;
+    color: #ccc;
+    font-size: 1.5em;
+    margin-bottom: 20px;
+}
+
+.bar-image {
+    display: block;
+    margin: 0 auto;
+    max-width: 800px;
+    width: 100%;
+}
+
+.showcase {
+    display: flex;
+    flex-wrap: wrap;
+    gap: 40px;
+    justify-content: space-between;
+}
+
+.showcase-item {
+    display: flex;
+    flex-direction: row;
+    align-items: flex-start;
+    width: 100%;
+    gap: 30px;
+}
+
+.showcase-item.reverse {
+    flex-direction: row-reverse;
+}
+
+.image {
+    flex: 1;
+}
+
+.image img:hover {
+    transform: scale(1.05);
+    box-shadow: 0 8px 20px rgba(0, 0, 0, 0.4);
+}
+
+.image img {
+    width: 100%;
+    max-width: 700px;
+    height: auto;
+    border-radius: 10px;
+    box-shadow: 0 4px 15px rgba(0, 0, 0, 0.3);
+    transition: transform 0.3s ease-in-out, box-shadow 0.3s ease-in-out;
+}
+
+.info {
+    flex: 1;
+    max-width: 500px;
+}
+
+.info h2 {
+    font-size: 2.5em;
+    color: #fff;
+    margin-bottom: 20px;
+}
+
+.info ul {
+    list-style-type: none;
+    margin: 10px 0;
+}
+
+.info ul li {
+    font-size: 1.3em;
+    color: #ccc;
+    margin-bottom: 12px;
+}
+
+.download {
+    text-align: center;
+    margin-top: 70px;
+}
+
+.download-btn {
+    display: inline-block;
+    padding: 18px 40px;
+    background-color: #394260;
+    color: white;
+    text-decoration: none;
+    font-size: 2.6em;
+    border-radius: 12px;
+    box-shadow: 0 4px 12px rgba(0, 0, 0, 0.2);
+    transition: background-color 0.3s ease, transform 0.3s ease, box-shadow 0.3s ease;
+}
+
+.download-btn:hover {
+    background-color: #4d5780;
+    transform: translateY(-3px);
+    box-shadow: 0 8px 18px rgba(0, 0, 0, 0.3);
+}
+
+.download-btn:active {
+    transform: translateY(1px);
+}
+
+/* Add this to your existing CSS */
+.installation {
+    text-align: center;
+    margin-top: 50px;
+}
+
+.installation-title {
+    font-size: 3.5em;
+    color: #fff;
+    margin-bottom: 20px;
+    font-weight: bold;
+    text-shadow: 2px 2px 4px rgba(0, 0, 0, 0.5);
+}
+
+.code-block {
+    background-color: rgba(255, 255, 255, 0.1);
+    padding: 20px;
+    border-radius: 12px;
+    display: inline-block;
+    margin: 0 auto;
+    transition: background-color 0.3s ease;
+}
+
+.code-block code {
+    font-family: monospace;
+    font-size: 1.5em;
+    color: #f4f4f4;
+    word-break: break-all;
+    white-space: nowrap;
+}
+
+.code-block:hover {
+    background-color: rgba(255, 255, 255, 0.15);
+    cursor: pointer;
+}
+
+.terminal-instruction {
+    font-size: 1.8em;
+    color: #ccc;
+    margin-top: 15px;
+    font-style: italic;
+}
